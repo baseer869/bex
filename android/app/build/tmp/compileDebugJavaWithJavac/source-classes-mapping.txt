@@ -1,0 +1,14 @@
+com/bex/ReactNativeFlipper.java
+ com.bex.ReactNativeFlipper
+ com.bex.ReactNativeFlipper$1
+ com.bex.ReactNativeFlipper$2
+ com.bex.ReactNativeFlipper$2$1
+com/bex/MainActivity.java
+ com.bex.MainActivity
+com/bex/MainApplication.java
+ com.bex.MainApplication
+ com.bex.MainApplication$1
+com/bex/BuildConfig.java
+ com.bex.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

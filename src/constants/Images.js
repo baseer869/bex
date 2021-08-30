@@ -70,6 +70,17 @@ export default Images = {
   cartImage: require('../assets/Images/cartImage.png'),
   location: require('../assets/Images/location.png'),
   right: require('../assets/Images/right.png'),
-  successful_image :require('../assets/Images/successful-image.png')
-
+  successful_image :require('../assets/Images/successful-image.png'),
+  profileImage:require('../assets/Images/profileImage.png'),
+  myAccount: require('../assets/Images/account.png'),
+  groupBuy:require('../assets/Images/groupBuy.png'),
+  sharedProduct:require('../assets/Images/shareProduct.png'),
+  myStore: require('../assets/Images/myStore.png'),
+  myOrder:require('../assets/Images/myOrder.png'),
+  refAndEarn:require('../assets/Images/referAndEarn.png'),
+  termsAndCondition:require('../assets/Images/termsAndCondition.png'),
+  privacyPolicy:require('../assets/Images/privacyPolicy.png'),
+  howWorks: require('../assets/Images/howWorks.png'),
+  faq: require('../assets/Images/faq.png'),
+rateApp:require('../assets/Images/rateApp.png'),
 };
