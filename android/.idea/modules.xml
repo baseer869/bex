@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bex.iml" filepath="$PROJECT_DIR$/.idea/modules/Bex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Bex.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Bex.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1823685128/Bex.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1823685128/Bex.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2053242148/Bex.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/2053242148/Bex.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/436617313/Bex.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/436617313/Bex.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1522759097/Bex.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1522759097/Bex.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/173003998/Bex.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/173003998/Bex.react-native-vector-icons.iml" />
+    </modules>
+  </component>
+</project>

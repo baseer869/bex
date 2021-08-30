@@ -1,0 +1,9 @@
+com/bex/MainActivity.java
+ com.bex.MainActivity
+com/bex/MainApplication.java
+ com.bex.MainApplication
+ com.bex.MainApplication$1
+com/bex/BuildConfig.java
+ com.bex.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
