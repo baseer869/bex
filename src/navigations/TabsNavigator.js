@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image} from 'react-native';
+import {Image} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home/Home';
 import Signup from '../screens/Auth/Signup';
@@ -7,41 +7,48 @@ import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 import MyStore from '../screens/Store/MyStore';
 import CategoryScreen from './../screens/category/CategoryScreen';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ProductDetailPage from './../screens/Home/ProductDetailPage';
-
+import Faqs from '../screens/ContentPages/Faqs';
+import Profile from '../screens/Profile/profile';
 const Tab = createBottomTabNavigator();
 
-
 // HOME TABS
-const HomeTabs =  createNativeStackNavigator();
+const HomeTabs = createNativeStackNavigator();
 
-function HomeTabsStack(){
+function HomeTabsStack() {
   return (
-    <HomeTabs.Navigator initialRouteName={'HomeScreen'} screenOptions={{headerShown:false}}>
+    <HomeTabs.Navigator
+      initialRouteName={'HomeScreen'}
+      screenOptions={{headerShown: false}}>
       <HomeTabs.Screen name={'HomeScreen'} component={Home} />
-      <HomeTabs.Screen name={'ProductDetailPage'} component={ProductDetailPage} />
+      <HomeTabs.Screen
+        name={'ProductDetailPage'}
+        component={ProductDetailPage}
+      />
     </HomeTabs.Navigator>
-  )
-}  
+  );
+}
 
-function CategoryTabsStack(){
+function CategoryTabsStack() {
   return (
-    <HomeTabs.Navigator initialRouteName={'CategoryScreen'} screenOptions={{headerShown:false}}>
+    <HomeTabs.Navigator
+      initialRouteName={'CategoryScreen'}
+      screenOptions={{headerShown: false}}>
       <HomeTabs.Screen name={'CategoryScreen'} component={CategoryScreen} />
     </HomeTabs.Navigator>
-  )
-}  
+  );
+}
 
-function MyStoreTabsStack(){
+function MyStoreTabsStack() {
   return (
-    <HomeTabs.Navigator initialRouteName={'MyStoreScreen'} screenOptions={{headerShown:false}}>
+    <HomeTabs.Navigator
+      initialRouteName={'MyStoreScreen'}
+      screenOptions={{headerShown: false}}>
       <HomeTabs.Screen name={'MyStoreScreen'} component={MyStore} />
     </HomeTabs.Navigator>
-  )
-}  
-
-
+  );
+}
 
 export default function TabNavigator() {
   return (
@@ -92,7 +99,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Account"
-        component={Signup}
+        component={Profile}
         options={{
           tabBarLabelStyle: {color: Theme.primary, fontWeight: 'bold'},
         }}
