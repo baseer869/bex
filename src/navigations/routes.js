@@ -8,15 +8,15 @@ const Main = createNativeStackNavigator();
 
 function Routes() {
   return (
-    <NavigationContainer >
+    <NavigationContainer>
       <Main.Navigator
-      initialRouteName={'Auth'}
+        initialRouteName={'Auth'}
         screenOptions={{
           headerShown: false,
         }}>
-          {/* splash screen */}
-         <Main.Screen name ='Auth' component={AuthNavigator} />
-         <Main.Screen name={'App'}  component={DrawerNavigation} />
+        {/* splash screen */}
+        <Main.Screen name="Auth" component={AuthNavigator} />
+        <Main.Screen name={'App'} component={DrawerNavigation} />
       </Main.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,7 @@ import Header from '../components/MainHeader';
 import Theme from '../utils/Theme';
 import Images from '../constants/Images';
 import ProductComponent from '../components/ProductComponent';
+import CatalogueComponent from '../components/CatalogueComponent';
 
 export default class ProductCatalogue extends Component {
   constructor(props) {
@@ -15,22 +16,32 @@ export default class ProductCatalogue extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <Header />
         <ScrollView style={{padding: 10}}>
-          <ProductComponent
+          <CatalogueComponent
             off="33% off"
             onPress={() => this.props.navigation.navigate('MyCart')}
+            text="Resell"
           />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
-          <ProductComponent off="33% off" />
+          <CatalogueComponent
+            off="33% off"
+            onPress={() => this.props.navigation.navigate('MyCart')}
+            text="Resell"
+          />
+          <CatalogueComponent
+            off="33% off"
+            onPress={() => this.props.navigation.navigate('MyCart')}
+            text="Resell"
+          />
+          <CatalogueComponent
+            off="33% off"
+            onPress={() => this.props.navigation.navigate('MyCart')}
+            text="Resell"
+          />
+          <CatalogueComponent
+            off="33% off"
+            onPress={() => this.props.navigation.navigate('MyCart')}
+            text="Resell"
+          />
         </ScrollView>
       </View>
     );
