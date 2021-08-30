@@ -37,9 +37,9 @@ color:Theme.white
 defaultBtn:{
     borderColor:Theme.primary,
     paddingTop:16,
-    paddingRight:4,
+    paddingRight:8,
     paddingBottom:16,
-    paddingLeft:4,
+    paddingLeft:8,
     borderRadius:4,
     borderWidth:1,
     marginVertical:8,

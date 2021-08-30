@@ -26,6 +26,7 @@ export default Theme = {
   cardBackground:'#F8F7FF',
   fontfamilyRegular: 'Lato-Regular',
   fontFamilyBold: 'Lato-Bold',
+  fontFamilyTitle:'Domine',
   fontFamilyPrimary:'Lato',
   backgroundColor:"#EFEDFF",
   height: Dimensions.get('window').height,

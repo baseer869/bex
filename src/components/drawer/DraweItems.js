@@ -50,37 +50,36 @@ const DrawerItems = ({navigation}) => {
             </Text>
           </View>
           <HorizontalLine />
-          {/* account  */}
           <View style={styles.accountContainer}>
             <Item
               title={'My Account'}
               image={Images.groupBuy}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('MyAccount')}
             />
             <Item
               title={'Group Buy'}
               image={Images.groupBuy}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('GroupBuy')}
             />
             <Item
               title={'My Shared Products'}
               image={Images.sharedProduct}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('SharedProduct')}
             />
             <Item
               title={'My Store'}
               image={Images.myStore}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('MyStore')}
             />
             <Item
               title={'My Order'}
               image={Images.myOrder}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('MyOrder')}
             />
             <Item
               title={'Refer And Earn'}
               image={Images.refAndEarn}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('ReferAndEarn')}
             />
           </View>
           <HorizontalLine />
@@ -88,22 +87,22 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Terms & Conditions'}
               image={Images.termsAndCondition}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('TermsAndConditions')}
             />
             <Item
-              title={'GPrivacy Policy'}
+              title={'Privacy Policy'}
               image={Images.privacyPolicy}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('PrivacyPolicy')}
             />
             <Item
               title={'How it works'}
               image={Images.howWorks}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('HowItWorks')}
             />
             <Item
               title={'FAQs'}
               image={Images.faq}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('Faq')}
             />
           </View>
           <HorizontalLine />
@@ -112,7 +111,7 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Rate the App'}
               image={Images.rateApp}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('RateApp')}
             />
           </View>
 
@@ -126,7 +125,7 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Logout'}
               image={Images.logout}
-              onMenuPress={() => navigation.navigate('')}
+              onMenuPress={() => navigation.navigate('Logout')}
             />
           </View>
         </ScrollView>

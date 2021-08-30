@@ -10,12 +10,13 @@ function Routes() {
   return (
     <NavigationContainer >
       <Main.Navigator
-      initialRouteName={'Auth'}
+      initialRouteName={'App'}
         screenOptions={{
           headerShown: false,
         }}>
           {/* splash screen */}
          <Main.Screen name ='Auth' component={AuthNavigator} />
+
          <Main.Screen name={'App'}  component={DrawerNavigation} />
       </Main.Navigator>
     </NavigationContainer>
