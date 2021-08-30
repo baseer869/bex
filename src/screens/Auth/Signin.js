@@ -43,7 +43,7 @@ export default function Signin(props) {
 
           <Button
             text="Login"
-            onPress={() => props.navigation.navigate('Dashboard')}
+            onPress={() => props.navigation.navigate('App')}
           />
           <View style={styles.rowView}>
             <View style={styles.line}></View>

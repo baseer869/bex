@@ -1,36 +1,26 @@
 import 'react-native-gesture-handler';
-
 import * as React from 'react';
-import {Button, View, Text, TouchableOpacity, Image} from 'react-native';
-
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import Signin from '../screens/Auth/Signin';
-import Signup from '../screens/Auth/Signup';
-import Home from './../screens/Home/Home';
+import TabNavigator from './TabsNavigator';
+
 const Drawer = createDrawerNavigator();
 
 export default function DrawerNavigation() {
   return (
     <Drawer.Navigator
+      initialRouteName={'TabNavigator'}
+      screenOptions={{headerShown:false}}
       drawerContentOptions={{
         activeTintColor: '#e91e63',
         itemStyle: {marginVertical: 5},
+      
       }}>
       <Drawer.Screen
-        name="FirstPage"
-        options={{drawerLabel: 'First page Option'}}
-        component={Signin}
+        name="MainTabs"
+        // options={{drawerLabel: 'First page Option'}}
+        component={TabNavigator}
       />
-      <Drawer.Screen
-        name="SecondPage"
-        options={{drawerLabel: 'Second page Option'}}
-        component={Signup}
-      />
-       <Drawer.Screen
-        name="Home"
-        // options={{drawerLabel: 'Second page Option'}}
-        component={Home}
-      />
+      {/* add only drawer screen here   */}
     </Drawer.Navigator>
   );
 }
