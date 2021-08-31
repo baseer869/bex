@@ -13,6 +13,7 @@ import Images from './../../constants/Images';
 import Theme from './../../utils/Theme';
 import StepToFollow from './../../components/UI/StepToFollow';
 import Footer from '../../components/Footer';
+import BackButtonHeader from './../../components/BackButtonHeader';
 
 const styles = StyleSheet.create({
   container: {
@@ -60,10 +61,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const HowItWorks = () => {
+const HowItWorks = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Header2 goback />
+      <BackButtonHeader navigation={navigation} />
       <ScrollView>
         <Image source={Images.howItWorks} style={styles.image} />
         <View style={styles.howWorkStyle}>

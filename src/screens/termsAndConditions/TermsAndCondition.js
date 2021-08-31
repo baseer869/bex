@@ -1,9 +1,9 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import Header2 from '../../components/Header2';
 import Theme from './../../utils/Theme';
 import TermsAndPolicyTitleView from './../../components/UI/TermsAndPolicyTitleView';
 import Footer from '../../components/Footer';
+import BackBttonHandler  from '../../components/BackButtonHeader';
 
 const styles = StyleSheet.create({
   container: {
@@ -37,10 +37,11 @@ function Paragraph({para}) {
   return <Text style={styles.paraText}>{para}</Text>;
 }
 
-const TermsAndCondition = () => {
+const TermsAndCondition = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Header2 goback />
+            <BackBttonHandler navigation={navigation}/>
+
       <View style={{flex: 1}}>
         <ScrollView>
           <View style={styles.paraStyle}>

@@ -10,7 +10,7 @@ import {
 import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 
-const HeaderWithText = ({onPress, text}) => {
+const HeaderWithText = ({onPress, text, navigation }) => {
   return (
     <View style={styles.main}>
       <View style={styles.header}>
@@ -28,7 +28,9 @@ const HeaderWithText = ({onPress, text}) => {
         </Text>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={Images.bell} style={styles.sort} />
+          <TouchableOpacity onPress={()=>navigation.navigate('ShoppingCart')}>
           <Image source={Images.cartTrolly} style={styles.trolly} />
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.line}></View>

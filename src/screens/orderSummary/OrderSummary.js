@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
+import BackButtonHeader from '../../components/BackButtonHeader';
 import EventButton from '../../components/EventButton';
 import Header2 from '../../components/Header2';
 import OrderButton from '../../components/UI/OrderButton';
@@ -266,7 +267,7 @@ const OrderSummary = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <Header2 goback />
+        <BackButtonHeader navigation={navigation}/>
         <View style={styles.addressView}>
           <Text style={styles.title}>Customer’s Shipping Address</Text>
           <View style={styles.deliverToView}>

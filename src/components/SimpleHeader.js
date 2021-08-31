@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React, {Component} from 'react';
 import {
   View,
@@ -10,11 +11,11 @@ import {
 import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 
-const SimpleHeader = ({text, source}) => {
+const SimpleHeader = ({text, source, navigation}) => {
   return (
     <View style={styles.main}>
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.goBack()}>
           <Image source={source} style={styles.arrowImage} />
         </TouchableOpacity>
         <Text
@@ -28,7 +29,9 @@ const SimpleHeader = ({text, source}) => {
         </Text>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={Images.bell} style={styles.sort} />
+          <TouchableOpacity onPress={()=>navigation.navigate('ShoppingCart')}>
           <Image source={Images.cartTrolly} style={styles.trolly} />
+          </TouchableOpacity>
         </View>
       </View>
     </View>

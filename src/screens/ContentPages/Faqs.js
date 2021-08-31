@@ -2,15 +2,12 @@ import React, {Component} from 'react';
 import {
   View,
   Text,
-  TouchableOpacity,
   Image,
   StyleSheet,
-  TouchableWithoutFeedbackComponent,
   ScrollView,
 } from 'react-native';
 import BackButtonHeader from '../../components/BackButtonHeader';
 import Footer from '../../components/Footer';
-import SimpleHeader from '../../components/SimpleHeader';
 import Images from '../../constants/Images';
 import Theme from '../../utils/Theme';
 
@@ -23,7 +20,7 @@ export default class Faqs extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <BackButtonHeader />
+        <BackButtonHeader navigation={this.props.navigation} />
         <ScrollView>
           <View style={styles.mainView}>
             <Image source={Images.faqsImage} style={styles.image} />

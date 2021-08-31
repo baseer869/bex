@@ -14,7 +14,8 @@ title:{
     fontFamily: Theme.fontFamilyTitle,
     fontStyle: 'normal',
     color: Theme.text,
-    fontWeight:'700'
+    fontWeight:'700',
+    paddingLeft:8.14
 }
 
 })

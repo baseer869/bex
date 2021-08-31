@@ -69,7 +69,7 @@ export default class ProductDetailPage extends Component {
     ];
     return (
       <View style={styles.main}>
-        <BackButtonHeader />
+        <BackButtonHeader navigation={this.props.navigation} />
         <ScrollView>
           <View style={styles.paddingView1}>
             <View

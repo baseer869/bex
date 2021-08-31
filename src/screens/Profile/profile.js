@@ -23,7 +23,7 @@ export default class profile extends Component {
   render() {
     return (
       <View style={{flex: 1, backgroundColor: Theme.white}}>
-        <SimpleHeader text="My Account" source={Images.backArrow} />
+        <SimpleHeader navigation={this.props.navigation} text="My Account" source={Images.backArrow} />
         <ScrollView>
           <View style={styles.main}>
             <Text style={styles.profile}>My Profile Details</Text>

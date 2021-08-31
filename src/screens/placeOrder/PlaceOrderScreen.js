@@ -4,6 +4,7 @@ import Theme from './../../utils/Theme';
 import Images from './../../constants/Images';
 import Header2 from './../../components/Header2';
 import CommonButton from '../../components/CommonButton';
+import BackButtonHeader from '../../components/BackButtonHeader';
 
 const PlaceOrderScreen = ({navigation}) => {
 
@@ -12,14 +13,14 @@ const PlaceOrderScreen = ({navigation}) => {
     }
     return (
         <View style={styles.container}>
-            <Header2 goback/>
+            <BackButtonHeader navigation={navigation} />
             <View style={styles.innerContainer}>
             <Image source={Images.successful_image} style={styles.img}/>
             <Text style={styles.slogan}>Your order has been successfully placed !!</Text>
             </View>
             <View style={styles.btContainer}>
             <CommonButton active title={'Track your order'} onPress={()=>trackOrder()}/>
-            <CommonButton title={'Continue shopping'} onPress={()=>navigation.navigate('Dashboard')}/>
+            <CommonButton title={'Continue shopping'} onPress={()=>navigation.navigate('HomeScreen')}/>
 
             </View>
         </View>

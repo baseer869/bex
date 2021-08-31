@@ -11,10 +11,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ProductDetailPage from './../screens/Home/ProductDetailPage';
 import Faqs from '../screens/ContentPages/Faqs';
 import Profile from '../screens/Profile/profile';
+<<<<<<< Updated upstream
 import Sale from '../screens/Home/Sale';
 import offers from '../screens/Home/offers';
 import GroupBuyHome from '../screens/GroupBuy/GroupBuyHome';
 import LaunchingSoon from '../screens/Home/LaunchingSoon';
+=======
+import ShoppingCart from './../screens/shoppingCart/ShoppingCart';
+import OrderSummary from './../screens/orderSummary/OrderSummary';
+import PlaceOrderScreen from './../screens/placeOrder/PlaceOrderScreen';
+>>>>>>> Stashed changes
 const Tab = createBottomTabNavigator();
 
 // HOME TABS
@@ -30,11 +36,27 @@ function HomeTabsStack() {
         name={'ProductDetailPage'}
         component={ProductDetailPage}
       />
+<<<<<<< Updated upstream
       <HomeTabs.Screen name={'Sale'} component={Sale} />
       <HomeTabs.Screen name={'offers'} component={offers} />
       <HomeTabs.Screen name={'GroupBuyHome'} component={GroupBuyHome} />
       <HomeTabs.Screen name={'LaunchingSoon'} component={LaunchingSoon} />
       <HomeTabs.Screen name={'CategoryScreen'} component={CategoryTabsStack} />
+=======
+       <HomeTabs.Screen
+        name={'ShoppingCart'}
+        component={ShoppingCart}
+      />
+       <HomeTabs.Screen
+        name={'OrderSummary'}
+        component={OrderSummary}
+      />
+             <HomeTabs.Screen
+        name={'PlaceOrderScreen'}
+        component={PlaceOrderScreen}
+      />
+      
+>>>>>>> Stashed changes
     </HomeTabs.Navigator>
   );
 }

@@ -16,6 +16,7 @@ import Images from '../../constants/Images';
 import Theme from '../../utils/Theme';
 import Header2 from './../../components/Header2';
 import SummaryCard from './../../components/UI/SummaryCard';
+import BackButtonHeader from '../../components/BackButtonHeader';
 
 const styles = StyleSheet.create({
   main: {
@@ -299,7 +300,7 @@ export default class ShoppingCart extends Component {
     ];
     return (
       <View style={styles.main}>
-        <Header2 goback />
+                <BackButtonHeader navigation={this.props.navigation} />
         {this.state.items.length == 0 ? (
           <View style={styles.main1}>
             <Image

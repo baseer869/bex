@@ -59,7 +59,7 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Group Buy'}
               image={Images.groupBuy}
-              onMenuPress={() => navigation.navigate('GroupBuy')}
+              onMenuPress={() => navigation.navigate('GroupBuyHome')}
             />
             <Item
               title={'My Shared Products'}
@@ -79,7 +79,7 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Refer And Earn'}
               image={Images.refAndEarn}
-              onMenuPress={() => navigation.navigate('ReferAndEarn')}
+              onMenuPress={() =>console.log('kk')}
             />
           </View>
           <HorizontalLine />
@@ -87,7 +87,7 @@ const DrawerItems = ({navigation}) => {
             <Item
               title={'Terms & Conditions'}
               image={Images.termsAndCondition}
-              onMenuPress={() => navigation.navigate('TermsAndConditions')}
+              onMenuPress={() => navigation.navigate('TermsAndCondition')}
             />
             <Item
               title={'Privacy Policy'}

@@ -101,8 +101,16 @@ export default Images = {
   receiver: require('../assets/Images/receiver.png'),
   mailbox: require('../assets/Images/mailbox.png'),
   downIcon: require('../assets/Images/downIcon.png'),
+<<<<<<< Updated upstream
   timer: require('../assets/Images/timer.png'),
   offerImage1: require('../assets/Images/offerImage1.png'),
   offerImage2: require('../assets/Images/offerImage2.png'),
   offerImage3: require('../assets/Images/offerImage3.png'),
+=======
+   cstore:require('../assets/Images/cstore.png'),
+   LearnTipImage:require('../assets/Images/LearnTipImage.png'),
+   startearning:require('../assets/Images/startearnig.png'),
+   aboutBex:require('../assets/Images/aboutbex.png'),
+   videoimage:require('../assets/Images/videoimg.png'),
+>>>>>>> Stashed changes
 };

@@ -10,17 +10,19 @@ import {
 import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 
-const BackButtonHeader = ({text}) => {
+const BackButtonHeader = ({text, navigation}) => {
   return (
     <View style={styles.main}>
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.goBack()}>
           <Image source={Images.backArrow} style={styles.arrowImage} />
         </TouchableOpacity>
         <Image source={Images.logo} style={styles.logo} />
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={Images.bell} style={styles.sort} />
+          <TouchableOpacity onPress={()=>navigation.navigate('ShoppingCart')}>
           <Image source={Images.cartTrolly} style={styles.trolly} />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -28,7 +30,7 @@ const BackButtonHeader = ({text}) => {
 };
 
 const styles = StyleSheet.create({
-  arrowImage: {height: 22, width: 22, justifyContent: 'center'},
+  arrowImage: {height: 22, width: 22, justifyContent: 'center', padding:4},
   main: {
     backgroundColor: Theme.primary,
   },
