@@ -34,6 +34,7 @@ function HomeTabsStack() {
       <HomeTabs.Screen name={'offers'} component={offers} />
       <HomeTabs.Screen name={'GroupBuyHome'} component={GroupBuyHome} />
       <HomeTabs.Screen name={'LaunchingSoon'} component={LaunchingSoon} />
+      <HomeTabs.Screen name={'CategoryScreen'} component={CategoryTabsStack} />
     </HomeTabs.Navigator>
   );
 }

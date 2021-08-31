@@ -6,11 +6,11 @@ import Signup from './../screens/Auth/Signup';
 import OTPLogin from './../screens/Auth/OTPLogin';
 import RefferId from './../screens/Auth/RefferId';
 import Splash from '../screens/Auth/Splash';
-import CategoryScreen from '../screens/category/CategoryScreen';
 import Sale from '../screens/Home/Sale';
 import offers from '../screens/Home/offers';
 import GroupBuyHome from '../screens/GroupBuy/GroupBuyHome';
 import LaunchingSoon from '../screens/Home/LaunchingSoon';
+import CategoryScreen from '../screens/category/CategoryScreen';
 
 const AuthStack = createNativeStackNavigator();
 
@@ -27,9 +27,6 @@ const AuthNavigator = () => {
       <AuthStack.Screen name="Signup" component={Signup} />
       <AuthStack.Screen name="OTPLogin" component={OTPLogin} />
       <AuthStack.Screen name="RefferId" component={RefferId} />
-      <AuthStack.Screen name="CategoryScreen" component={CategoryScreen} />
-
-      <AuthStack.Screen name="LaunchingSoon" component={LaunchingSoon} />
     </AuthStack.Navigator>
   );
 };

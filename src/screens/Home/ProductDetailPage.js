@@ -8,7 +8,7 @@ import {
   TextInput,
   ScrollView,
   FlatList,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 import BackButtonHeader from '../../components/BackButtonHeader';
 import Theme from '../../utils/Theme';
@@ -76,6 +76,7 @@ export default class ProductDetailPage extends Component {
               style={{justifyContent: 'space-between', flexDirection: 'row'}}>
               <View></View>
               <SliderBox
+                dotStyle={{}}
                 images={this.state.images1}
                 sliderBoxHeight={200}
                 resizeMode="cover"
@@ -88,7 +89,7 @@ export default class ProductDetailPage extends Component {
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <Text style={styles.debatic}>Actiyo Shampoo</Text>
-              <View style={{flexDirection: 'row'}}>
+              <View style={{flexDirection: 'row', alignItems: 'center'}}>
                 <Text style={styles.price}>₹1500</Text>
                 <Text style={styles.priceLight}> ₹1000</Text>
               </View>
@@ -111,7 +112,7 @@ export default class ProductDetailPage extends Component {
               }}>
               <View>
                 <Text style={styles.info}>Product Info</Text>
-                <Text style={{marginTop: 10}}>
+                <Text style={{marginTop: 10, fontSize: 16}}>
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                   Exercitation veniam consequat sunt nostrud amet.
@@ -135,7 +136,7 @@ export default class ProductDetailPage extends Component {
               </View>
               <Image
                 source={Images.get}
-                style={{width: 130, height: 19, marginLeft: 10}}
+                style={{width: 160, height: 25, marginLeft: 10}}
               />
             </View>
           </View>
@@ -150,7 +151,10 @@ export default class ProductDetailPage extends Component {
                 flexDirection: 'row',
                 marginTop: '10%',
               }}>
-              <TouchableOpacity activeOpacity={0.5} onPress={()=>this.props.navigation.navigate('ShoppingCart')}  style={styles.buBtn}>
+              <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={() => this.props.navigation.navigate('ShoppingCart')}
+                style={styles.buBtn}>
                 <Image source={Images.btnIcon} style={styles.buy} />
                 <Text style={styles.buyText1}>Buy this Product</Text>
               </TouchableOpacity>
@@ -431,6 +435,7 @@ const styles = StyleSheet.create({
   },
   priceLight: {
     color: Theme.subText,
+    textDecorationLine: 'line-through',
   },
   priceLight1: {
     color: Theme.subText,

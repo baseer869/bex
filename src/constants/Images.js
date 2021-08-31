@@ -102,4 +102,7 @@ export default Images = {
   mailbox: require('../assets/Images/mailbox.png'),
   downIcon: require('../assets/Images/downIcon.png'),
   timer: require('../assets/Images/timer.png'),
+  offerImage1: require('../assets/Images/offerImage1.png'),
+  offerImage2: require('../assets/Images/offerImage2.png'),
+  offerImage3: require('../assets/Images/offerImage3.png'),
 };

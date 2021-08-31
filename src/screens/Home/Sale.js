@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
 
-import Header from '../../components/MainHeader';
+import BackArrowHeader from '../../components/BackArrowHeader';
 import ProductComponent from '../../components/ProductComponent';
 import Theme from '../../utils/Theme';
 
@@ -14,7 +14,7 @@ export default class Sale extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <Header />
+        <BackArrowHeader />
         <ScrollView style={{padding: 10}}>
           <ProductComponent
             off="33% off"

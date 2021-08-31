@@ -346,7 +346,6 @@ export default class Home extends Component {
             <View
               style={{
                 flexDirection: 'row',
-                // justifyContent: 'space-between',
                 marginTop: '10%',
               }}>
               <TouchableOpacity
