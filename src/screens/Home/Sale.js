@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
 
-import Header from '../components/MainHeader';
-import Theme from '../utils/Theme';
-import Images from '../constants/Images';
-import ProductComponent from '../components/ProductComponent';
+import Header from '../../components/MainHeader';
+import ProductComponent from '../../components/ProductComponent';
+import Theme from '../../utils/Theme';
 
 export default class Sale extends Component {
   constructor(props) {

@@ -70,26 +70,39 @@ export default class Home extends Component {
                 dotColor={Theme.text}
               />
               <View style={styles.iconRow}>
-                <View>
+                <TouchableOpacity
+                  onPress={() =>
+                    this.props.navigation.navigate('CategoryScreen')
+                  }>
                   <Image source={Images.catIcon} style={styles.icons} />
                   <Text style={styles.title}>Catagory</Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => this.props.navigation.navigate('Sale')}>
                   <Image source={Images.salesIcon} style={styles.icons} />
                   <Text style={styles.title}>Sales</Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => this.props.navigation.navigate('offers')}>
                   <Image source={Images.offersIcon} style={styles.icons} />
                   <Text style={styles.title}>Offers</Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() =>
+                    this.props.navigation.navigate('GroupBuyHome')
+                  }>
                   <Image source={Images.groupByIcon} style={styles.icons} />
                   <Text style={styles.title}>Group Buy</Text>
-                </View>
-                <View>
-                  <Image source={Images.rewardIcon} style={styles.icons} />
-                  <Text style={styles.title}>Rewards</Text>
-                </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={{marginTop: Theme.hp('3%')}}
+                  onPress={() =>
+                    this.props.navigation.navigate('LaunchingSoon')
+                  }>
+                  <Image source={Images.timer} style={styles.icons} />
+                  <Text style={styles.title}>Launching </Text>
+                  <Text style={styles.title}>Soon</Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.rowView}>
                 <Text style={styles.flashSale}>Flash Sale</Text>
@@ -109,7 +122,12 @@ export default class Home extends Component {
             </View>
           </View>
           <View style={styles.paddingView}>
-            <ProductComponent off="30% off" />
+            <ProductComponent
+              off="30% off"
+              onPress={() =>
+                this.props.navigation.navigate('ProductDetailPage')
+              }
+            />
           </View>
           <View style={styles.catagoryView}>
             <View style={styles.paddingView}>
@@ -197,7 +215,12 @@ export default class Home extends Component {
                   borderTopColor: Theme.subText,
                   marginTop: '4%',
                 }}>
-                <TouchableOpacity activeOpacity={0.5} onPress={()=>this.props.navigation.navigate('ProductDetailPage')} style={styles.buyButn}>
+                <TouchableOpacity
+                  activeOpacity={0.5}
+                  onPress={() =>
+                    this.props.navigation.navigate('ProductDetailPage')
+                  }
+                  style={styles.buyButn}>
                   <Image source={Images.buyIcon} style={styles.buy} />
                   <Text style={styles.buyText}>Buy</Text>
                 </TouchableOpacity>
@@ -326,10 +349,14 @@ export default class Home extends Component {
                 // justifyContent: 'space-between',
                 marginTop: '10%',
               }}>
-              <View style={styles.buBtn}>
+              <TouchableOpacity
+                style={styles.buBtn}
+                onPress={() =>
+                  this.props.navigation.navigate('ProductDetailPage')
+                }>
                 <Image source={Images.btnIcon} style={styles.buy} />
                 <Text style={styles.buyText1}>Buy this Product</Text>
-              </View>
+              </TouchableOpacity>
               <View style={styles.whatsappBtn1}>
                 <Image source={Images.whatsapp} style={styles.bu1} />
                 <Text style={styles.whatsappText}>Share and earn</Text>

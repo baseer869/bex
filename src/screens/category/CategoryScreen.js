@@ -19,21 +19,18 @@ const CategoryScreen = () => {
   const [toggle, setToggle] = useState(false);
   const [expanded, setExpanded] = useState(true);
 
-  const [activeCate , setActiveCate] = useState('')
+  const [activeCate, setActiveCate] = useState('');
 
   function setSubCategory(subCateg, index) {
     setSubCate(subCateg);
-    setActiveCate(index)
-
+    setActiveCate(index);
   }
-useEffect(() => {
- 
-}, [activeCate])
+  useEffect(() => {}, [activeCate]);
 
-function handlePress(index){
-  setExpanded(!expanded)
-}
- 
+  function handlePress(index) {
+    setExpanded(!expanded);
+  }
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={Theme.backgroundColor} />
@@ -43,19 +40,35 @@ function handlePress(index){
         style={styles.cardStyle}
       />
       <View style={styles.categContainer}>
-        <ScrollView style={{ width:"40%", marginTop:15 }}>
+        <ScrollView style={{width: '40%', marginTop: 15}}>
           {category.map((categ, index) => {
             var cate = categ.subCate;
             return (
-                <TouchableOpacity
-                  key={String(categ?.id + index)}
-                  activeOpacity={1}
-                  onPress={() => setSubCategory(cate, index)}
-                  style={ activeCate == index ? [styles.categView]: [styles.categView] }>
-                  <Image source={categ.image} style={activeCate == index ? {tintColor:Theme.primary}:[{tintColor:Theme.subText}]} />
-                  <Text style={[activeCate ==index ? [styles.text, {color:Theme.primary}] : styles.text]}>{categ.name}</Text>
-                 { (activeCate == index)  && <View style={styles.cateLine}/>}
-                </TouchableOpacity>
+              <TouchableOpacity
+                key={String(categ?.id + index)}
+                activeOpacity={1}
+                onPress={() => setSubCategory(cate, index)}
+                style={
+                  activeCate == index ? [styles.categView] : [styles.categView]
+                }>
+                <Image
+                  source={categ.image}
+                  style={
+                    activeCate == index
+                      ? {tintColor: Theme.primary}
+                      : [{tintColor: Theme.subText}]
+                  }
+                />
+                <Text
+                  style={[
+                    activeCate == index
+                      ? [styles.text, {color: Theme.primary}]
+                      : styles.text,
+                  ]}>
+                  {categ.name}
+                </Text>
+                {activeCate == index && <View style={styles.cateLine} />}
+              </TouchableOpacity>
             );
           })}
         </ScrollView>
@@ -63,30 +76,23 @@ function handlePress(index){
           {subCateg &&
             subCateg.map((item, index) => {
               return (
-
-
                 <List.Accordion
-                // expanded={expanded}
-                // onPress={()=>handlePress(index)}
-                titleStyle={{color:Theme.text}}
+                  // expanded={expanded}
+                  // onPress={()=>handlePress(index)}
+                  titleStyle={{color: Theme.text}}
                   title={item.name}
-                  style={styles.titleStyle}
-                >
+                  style={styles.titleStyle}>
                   {item.item.map(item => {
                     return (
-
-              <List.Item style={{backgroundColor:'#EFEDFF', opacity:0.5}} title={item.name} /> 
+                      <List.Item
+                        style={{backgroundColor: '#EFEDFF', opacity: 0.5}}
+                        title={item.name}
+                      />
                     );
                   })}
-
                 </List.Accordion>
-
-
               );
-              
-            })
-            
-            }
+            })}
         </List.Section>
       </View>
     </View>
@@ -108,14 +114,14 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   categContainer: {
-    flex: 1, 
+    flex: 1,
   },
   categView: {
     flexDirection: 'row',
     alignItems: 'center',
     marginVertical: 5,
-    paddingVertical:12,
-    marginLeft:10
+    paddingVertical: 12,
+    marginLeft: 10,
   },
   text: {
     fontFamily: 'Lato',
@@ -131,8 +137,8 @@ const styles = StyleSheet.create({
     borderTopWidth: 2,
     borderTopColor: Theme.primary,
     borderRadius: 8,
-    position:'absolute',
-    top:45,
+    position: 'absolute',
+    top: 45,
     borderTopLeftRadius: 4,
     borderTopLeftRadius: 4,
     // right:80
@@ -144,8 +150,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     height: 44,
     marginTop: 20,
-    width: "60%",
-
+    width: '60%',
   },
   innerSubCateg: {
     backgroundColor: Theme.accent2,
@@ -153,13 +158,13 @@ const styles = StyleSheet.create({
     width: 170,
   },
   titleStyle: {
-    width: "100%",
+    width: '100%',
     height: 55,
     fontSize: 14,
     fontFamily: 'Lato',
     lineHeight: 16.8,
     fontStyle: 'normal',
     backgroundColor: '#EFEDFF',
-    color:Theme.subText
+    color: Theme.subText,
   },
 });

@@ -11,6 +11,10 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ProductDetailPage from './../screens/Home/ProductDetailPage';
 import Faqs from '../screens/ContentPages/Faqs';
 import Profile from '../screens/Profile/profile';
+import Sale from '../screens/Home/Sale';
+import offers from '../screens/Home/offers';
+import GroupBuyHome from '../screens/GroupBuy/GroupBuyHome';
+import LaunchingSoon from '../screens/Home/LaunchingSoon';
 const Tab = createBottomTabNavigator();
 
 // HOME TABS
@@ -26,6 +30,10 @@ function HomeTabsStack() {
         name={'ProductDetailPage'}
         component={ProductDetailPage}
       />
+      <HomeTabs.Screen name={'Sale'} component={Sale} />
+      <HomeTabs.Screen name={'offers'} component={offers} />
+      <HomeTabs.Screen name={'GroupBuyHome'} component={GroupBuyHome} />
+      <HomeTabs.Screen name={'LaunchingSoon'} component={LaunchingSoon} />
     </HomeTabs.Navigator>
   );
 }

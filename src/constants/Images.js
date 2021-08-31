@@ -82,15 +82,12 @@ export default Images = {
   privacyPolicy: require('../assets/Images/privacyPolicy.png'),
   howWorks: require('../assets/Images/howWorks.png'),
   faq: require('../assets/Images/faq.png'),
-rateApp:require('../assets/Images/rateApp.png'),
-logout:require('../assets/Images/logout.png'),
-howItWorks:require('../assets/Images/howWorks-img.png'),
-heading1:require('../assets/Images/heading1.png'),
-heading2:require('../assets/Images/heading2.png'),
-heading3:require('../assets/Images/heading3.png'),
-
-
-
+  rateApp: require('../assets/Images/rateApp.png'),
+  logout: require('../assets/Images/logout.png'),
+  howItWorks: require('../assets/Images/howWorks-img.png'),
+  heading1: require('../assets/Images/heading1.png'),
+  heading2: require('../assets/Images/heading2.png'),
+  heading3: require('../assets/Images/heading3.png'),
 
   rateApp: require('../assets/Images/rateApp.png'),
   successful_image: require('../assets/Images/successful-image.png'),
@@ -104,4 +101,5 @@ heading3:require('../assets/Images/heading3.png'),
   receiver: require('../assets/Images/receiver.png'),
   mailbox: require('../assets/Images/mailbox.png'),
   downIcon: require('../assets/Images/downIcon.png'),
+  timer: require('../assets/Images/timer.png'),
 };
