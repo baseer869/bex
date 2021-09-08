@@ -14,7 +14,7 @@ import Header2 from './../../components/Header2';
 import {category} from '../../utils/staticContent';
 import {List} from 'react-native-paper';
 
-const CategoryScreen = () => {
+const CategoryScreen = ({navigation}) => {
   const [subCateg, setSubCate] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [expanded, setExpanded] = useState(true);
@@ -34,7 +34,7 @@ const CategoryScreen = () => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={Theme.backgroundColor} />
-      <Header2 menu onPress={() => toggleDrawer()} />
+      <Header2 menu onPress={() =>navigation.openDrawer()} />
       <Image
         source={require('../../assets/Images/saleCard.png')}
         style={styles.cardStyle}

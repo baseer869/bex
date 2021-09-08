@@ -12,7 +12,7 @@ export default class LaunchingSoon extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <BackButtonHeader />
+        <BackButtonHeader navigation={this.props.navigation} />
         <ScrollView>
           <View style={{padding: 15}}>
             <LaunchingProductComponent off="20% off" />

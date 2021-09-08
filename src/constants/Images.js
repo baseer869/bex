@@ -26,8 +26,8 @@ export default Images = {
   userDark: require('../assets/Images/userDark.png'),
 
   catIcon: require('../assets/Images/catIcon.png'),
-  salesIcon: require('../assets/Images/salesIcon.png'),
-  offersIcon: require('../assets/Images/offersIcon.png'),
+  // salesIcon: require('../assets/Images/salesIcon.png'),
+  // offersIcon: require('../assets/Images/offersIcon.png'),
   groupByIcon: require('../assets/Images/groupByIcon.png'),
   rewardIcon: require('../assets/Images/rewardIcon.png'),
   productSlide1: require('../assets/Images/productSlide1.png'),
@@ -101,16 +101,20 @@ export default Images = {
   receiver: require('../assets/Images/receiver.png'),
   mailbox: require('../assets/Images/mailbox.png'),
   downIcon: require('../assets/Images/downIcon.png'),
-<<<<<<< Updated upstream
   timer: require('../assets/Images/timer.png'),
   offerImage1: require('../assets/Images/offerImage1.png'),
   offerImage2: require('../assets/Images/offerImage2.png'),
   offerImage3: require('../assets/Images/offerImage3.png'),
-=======
-   cstore:require('../assets/Images/cstore.png'),
-   LearnTipImage:require('../assets/Images/LearnTipImage.png'),
-   startearning:require('../assets/Images/startearnig.png'),
-   aboutBex:require('../assets/Images/aboutbex.png'),
-   videoimage:require('../assets/Images/videoimg.png'),
->>>>>>> Stashed changes
+  //  cstore:require('../assets/Images/cstore.png'),
+  //  LearnTipImage:require('../assets/Images/LearnTipImage.png'),
+  //  startearning:require('../assets/Images/startearnig.png'),
+  //  aboutBex:require('../assets/Images/aboutbex.png'),
+  //  videoimage:require('../assets/Images/videoimg.png'),
+  billingdetail:  require('../assets/Images/billingDetail.png'),
+  paymentDetail:  require('../assets/Images/paymentDetail.png'),
+  orderSummary:  require('../assets/Images/orderSummary.png'),
+  teaimg:  require('../assets/Images/tea-img.png'),
+
+
+
 };

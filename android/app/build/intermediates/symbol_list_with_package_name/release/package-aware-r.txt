@@ -1437,6 +1437,9 @@ drawable src_assets_images_mobile
 drawable src_assets_images_myorder
 drawable src_assets_images_mystore
 drawable src_assets_images_nutritional
+drawable src_assets_images_offerimage1
+drawable src_assets_images_offerimage2
+drawable src_assets_images_offerimage3
 drawable src_assets_images_offersicon
 drawable src_assets_images_personal
 drawable src_assets_images_plus
@@ -1467,6 +1470,7 @@ drawable src_assets_images_storedark
 drawable src_assets_images_storelight
 drawable src_assets_images_successfulimage
 drawable src_assets_images_termsandcondition
+drawable src_assets_images_timer
 drawable src_assets_images_tollydark
 drawable src_assets_images_trash
 drawable src_assets_images_twitterlogo

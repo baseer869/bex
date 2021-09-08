@@ -31,7 +31,7 @@ export default class Faqs extends Component {
             </Text>
             <View style={styles.borderView}>
               <Image source={Images.receiver} style={styles.receiver} />
-              <View style={{marginLeft: Theme.wp('4%')}}>
+              <View style={{marginLeft: Theme.wp('3%')}}>
                 <Text style={styles.write}>Call now</Text>
                 <View style={{flexDirection: 'row', marginTop: Theme.hp('1%')}}>
                   <Text style={{fontSize: 16}}>Call us on </Text>
@@ -41,9 +41,9 @@ export default class Faqs extends Component {
             </View>
             <View style={styles.borderView}>
               <Image source={Images.mailbox} style={styles.mail} />
-              <View style={{marginLeft: Theme.wp('4%')}}>
+              <View style={{marginLeft: Theme.wp('3%')}}>
                 <Text style={styles.write}>Write to us</Text>
-                <View style={{flexDirection: 'row', marginTop: Theme.hp('1%')}}>
+                <View style={{flexDirection: 'row', marginTop: Theme.hp('1%'),}}>
                   <Text style={{fontSize: 16}}>Mail us on </Text>
                   <Text style={styles.phone}>emailaddress@gmail.com</Text>
                 </View>
@@ -180,7 +180,6 @@ const styles = StyleSheet.create({
     color: Theme.primary,
     fontSize: 16,
     fontWeight: '700',
-    marginLeft: Theme.wp('2%'),
   },
   question: {
     fontSize: 16,

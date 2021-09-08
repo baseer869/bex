@@ -28,7 +28,7 @@ export default class GroupBuyHome extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <Header />
+        <Header navigation={this.props.navigation} />
         <ScrollView>
           <View style={styles.whiteView}>
             <Image

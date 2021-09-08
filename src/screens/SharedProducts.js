@@ -16,7 +16,7 @@ export default class SharedProducts extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <ScrollView style={{padding: 10}}>
+        <ScrollView  style={{flex:1, paddingBottom:30, paddingHorizontal:16 }} showsVerticalScrollIndicator={false}>
           <CatalogueComponent
             off="33% off"
             onPress={() => this.props.navigation.navigate('MyCart')}

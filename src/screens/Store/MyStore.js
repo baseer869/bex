@@ -20,7 +20,7 @@ export default class MyStore extends Component {
 
     return (
       <View style={{flex: 1}}>
-        <HeaderWithText text="My Store" />
+        <HeaderWithText navigation={this.props.navigation}  text="My Store" />
         <View style={styles.toggleRow}>
           <Text style={{color: Theme.text, fontWeight: '500'}}>
             Show products in stock

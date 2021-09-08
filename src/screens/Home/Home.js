@@ -56,7 +56,7 @@ export default class Home extends Component {
     ];
     return (
       <View style={styles.main}>
-        <Header onPress={() => toggleDrawer()} />
+        <Header navigation={this.props.navigation} onPress={() => toggleDrawer()} />
 
         <ScrollView>
           <View style={{backgroundColor: Theme.white}}>
@@ -182,6 +182,8 @@ export default class Home extends Component {
                   ImageComponentStyle={{borderRadius: 10}}
                   parentWidth={Theme.wp('22%')}
                   dotColor={Theme.text}
+                  dotStyle={{width: 7, height: 7, top: Theme.hp('1.7%')}}
+                   inactiveDotColor={Theme.subText}
                 />
                 <Image source={Images.share} style={styles.share} />
               </View>

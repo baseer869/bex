@@ -46,7 +46,7 @@ export default class offers extends Component {
     ];
     return (
       <View style={styles.main}>
-        <BackArrowHeader />
+                <BackArrowHeader navigation={this.props.navigation} />
         <View style={{padding: 15}}>
           <FlatList
             data={data}

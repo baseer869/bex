@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Bex\\Bex\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "E:\\Bex\\Bex - Copy\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\dcc76cd07ebcaa6166d73d461b1667fa\\cardview-1.0.0\\res\\values\\values.xml",
@@ -42,22 +42,20 @@
                     }
                 },
                 {
-                    "source": "E:\\Bex\\Bex\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "E:\\Bex\\Bex - Copy\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "3",
+                        "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "240"
+                        "startOffsets": "17",
+                        "endColumns": "40",
+                        "endOffsets": "53"
                     },
                     "to": {
-                        "startLines": "799",
+                        "startLines": "669",
                         "startColumns": "4",
-                        "startOffsets": "58345",
-                        "endLines": "802",
-                        "endColumns": "12",
-                        "endOffsets": "58525"
+                        "startOffsets": "42881",
+                        "endColumns": "40",
+                        "endOffsets": "42917"
                     }
                 },
                 {
@@ -94,6 +92,25 @@
                         "startOffsets": "37110,37150,37543,37725,37780,38664,38718,38770,38819,38880",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "37145,37192,37581,37775,37822,38713,38765,38814,38875,38925"
+                    }
+                },
+                {
+                    "source": "E:\\Bex\\Bex - Copy\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "240"
+                    },
+                    "to": {
+                        "startLines": "799",
+                        "startColumns": "4",
+                        "startOffsets": "58345",
+                        "endLines": "802",
+                        "endColumns": "12",
+                        "endOffsets": "58525"
                     }
                 },
                 {
@@ -173,23 +190,6 @@
                     }
                 },
                 {
-                    "source": "E:\\Bex\\Bex\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "40",
-                        "endOffsets": "53"
-                    },
-                    "to": {
-                        "startLines": "669",
-                        "startColumns": "4",
-                        "startOffsets": "42881",
-                        "endColumns": "40",
-                        "endOffsets": "42917"
-                    }
-                },
-                {
                     "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\803d31b2df2f8d968e6cb7c3ffa37ef9\\jetified-viewpager2-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -247,7 +247,7 @@
                     }
                 },
                 {
-                    "source": "E:\\Bex\\Bex\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
+                    "source": "E:\\Bex\\Bex - Copy\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
                     "from": {
                         "startLines": "6,8",
                         "startColumns": "4,4",

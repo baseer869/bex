@@ -15,13 +15,13 @@ const CatalogueComponent = ({off, onPress, text}) => {
         ImageComponentStyle={{borderRadius: 10, marginTop: 10}}
         parentWidth={Theme.wp('25%')}
         dotColor={Theme.text}
-        dotStyle={{width: 5, height: 5}}
+        dotStyle={{width: 7.69, height: 7}}
       />
       <View style={styles.offView}>
         <Text style={{color: Theme.white}}>{off}</Text>
       </View>
 
-      <View style={{width: Theme.wp('60%'), marginLeft: '3%'}}>
+      <View style={{width: Theme.wp('60%'),}}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={styles.debatic}>Diebetic Care</Text>
           <Text style={styles.stock}>In Stock</Text>
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: Theme.white,
     flexDirection: 'row',
     padding: 10,
-    marginTop: 7,
+    marginVertical:6,
     borderRadius: 8,
   },
   debatic: {
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
     width: Theme.wp('25%'),
     flexDirection: 'row',
     padding: 10,
+    paddingHorizontal:5,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 4,

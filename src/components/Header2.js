@@ -9,13 +9,12 @@ import {
 import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 
-const Header2 = ({onPress, goback, menu}) => {
+const Header2 = ({onPress, goback, menu, navigation}) => {
   return (
     <View style={styles.main}>
       <StatusBar  backgroundColor={Theme.primary}/>
-      <View style={styles.line}></View>
       <View style={styles.header}>
-       { menu && <TouchableOpacity onPress={onPress}>
+       { menu && <TouchableOpacity onPress={()=> onPress()}>
           <Image source={Images.menu} style={styles.arrowImage} />
         </TouchableOpacity>}
         { goback && <TouchableOpacity onPress={onPress}>

@@ -14,7 +14,7 @@ const HeaderWithText = ({onPress, text, navigation }) => {
   return (
     <View style={styles.main}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity onPress={()=> navigation.openDrawer()}>
           <Image source={Images.menu} style={styles.arrowImage} />
         </TouchableOpacity>
         <Text
@@ -44,7 +44,7 @@ const HeaderWithText = ({onPress, text, navigation }) => {
         }}>
         <View style={styles.input}>
           <Image source={Images.search} style={[styles.search]} />
-          <TextInput placeholder="Search for products and more" />
+          <TextInput placeholderTextColor={Theme.subText} placeholder="Search for products and more" />
         </View>
         <View
           style={{

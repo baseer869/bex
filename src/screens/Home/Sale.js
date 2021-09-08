@@ -14,7 +14,7 @@ export default class Sale extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <BackArrowHeader />
+        <BackArrowHeader navigation={this.props.navigation} />
         <ScrollView style={{padding: 10}}>
           <ProductComponent
             off="33% off"

@@ -15,7 +15,8 @@ const ProductComponent = ({off, onPress}) => {
         ImageComponentStyle={{borderRadius: 10, marginTop: 10}}
         parentWidth={Theme.wp('25%')}
         dotColor={Theme.text}
-        dotStyle={{width: 5, height: 5}}
+        dotStyle={{width: 7, height: 7, top: Theme.hp('1.7%')}}
+        inactiveDotColor={Theme.subText}
       />
       <View style={styles.offView}>
         <Text style={{color: Theme.white}}>{off}</Text>

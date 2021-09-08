@@ -10,20 +10,21 @@ import {
 import Images from '../constants/Images';
 import Theme from '../utils/Theme';
 
-const Header = ({onPress}) => {
+const Header = ({onPress, navigation}) => {
   return (
     <View style={styles.main}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity onPress={()=>navigation.openDrawer()}>
           <Image source={Images.menu} style={styles.arrowImage} />
         </TouchableOpacity>
         <Image source={Images.logo} style={styles.logo} />
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={Images.bell} style={styles.sort} />
+          <TouchableOpacity onPress={()=>navigation.navigate('ShoppingCart')}>
           <Image source={Images.cartTrolly} style={styles.trolly} />
+          </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.line}></View>
       <View
         style={{
           flexDirection: 'row',
@@ -34,7 +35,7 @@ const Header = ({onPress}) => {
         }}>
         <View style={styles.input}>
           <Image source={Images.search} style={[styles.search]} />
-          <TextInput placeholder="Search for products and more" />
+          <TextInput placeholderTextColor={Theme.subText} placeholder="Search for products and more" />
         </View>
         <View
           style={{

@@ -533,6 +533,13 @@ const category = [
 
   ];
 
+const product=[{
+ id:'1',
+ name:'Diabetic Care',
+ slogan:'Fit Support',
+
+}]
+
 
   export {
       category
